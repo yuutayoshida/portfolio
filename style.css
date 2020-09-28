@@ -3,6 +3,48 @@ body, a{
   margin: 0;
 }
 
+.is-hide{
+  display: none;
+}
+
+/* ローディング画面をフェードアウト */
+.fadeout-bg {
+  transition-property: opacity;
+  transition-delay: .9s;
+  transition-duration: .8s;
+  opacity: 0;
+  pointer-events: none;
+}
+/* ローダーをフェードアウト */
+.fadeout-loader {
+  transition-property: opacity;
+  transition-delay: .9s;
+  transition-duration: .3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#loader-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  background: rgba(255, 255, 255, 1);
+}
+#loading {
+  text-align: center;
+  position: relative;
+  top: 25%;
+  z-index: 2;
+}
+
+#loading img{
+  width: 300px;
+  height: 300px;
+}
+
 #top-body{
   width: 100%;
   background-image: url(images/名称未設定-5.png);
@@ -317,28 +359,6 @@ footer p{
 .art-li p{
   font-family: 'Noto Sans JP', sans-serif;
   text-align: center;
-}
-
-#loader-bg {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  background: rgba(255, 255, 255, 1);
-}
-#loading {
-  text-align: center;
-  position: relative;
-  top: 25%;
-  z-index: 2;
-}
-
-#loading img{
-  width: 300px;
-  height: 300px;
 }
 
 @media screen and (max-width:896px){

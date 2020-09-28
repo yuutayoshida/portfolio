@@ -23,26 +23,26 @@ $(function(){
 });
 
 $(function() {
-  var h = $(window).height();
-  $('#top-body').css('display','none');
-  $('#loader-bg ,#loader').height(h).css('display','block');
+  $('#loader-bg').removeClass('is-hide');
+  $('#loading').removeClass('is-hide');
+  $('#top-body').addClass('is-hide');
 });
   
 $(window).on('load',function () { //全ての読み込みが完了したら実行
-  $('#loader-bg').fadeOut(800);
-  $('#loading').fadeOut(300);
-  $('#top-body').css('display','block');
+  $('#loader-bg').addClass('is-hide');
+  $('#loading').addClass('is-hide');
+  $('#top-body').removeClass('is-hide');
+});
+
+//10秒たったら強制的にロード画面を非表示
+$(function(){
+  setTimeout('stopload()',10000);
 });
 
 $(function(){
   function stopload(){
-    $('#loader-bg').fadeOut(800);
-    $('#loading').fadeOut(300);
-    $('#top-body').css('display','block');
+    $('#loader-bg').addClass('is-hide');
+    $('#loading').addClass('is-hide');
+    $('#top-body').removeClass('is-hide');
   }
-    
-  //10秒たったら強制的にロード画面を非表示
-  $(function(){
-    setTimeout('stopload()',10000);
-  });
 });
