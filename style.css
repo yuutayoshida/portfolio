@@ -1,0 +1,456 @@
+body, a{
+  cursor: default;
+  margin: 0;
+}
+
+#top-body{
+  width: 100%;
+  background-image: url(images/名称未設定-5.png);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.header-cont{
+  width: 70%;
+  margin: 0 auto;
+}
+
+header{
+  text-align: center;
+  padding: 50px 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.header-cont a img{
+  height: 100px;
+}
+
+.button:hover{
+  opacity: 0.4;
+  transition: 0.3s;
+}
+
+.header-cont ul{
+  margin: 0;
+  padding: 0;
+}
+
+.header-cont ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.header-cont ul li:nth-child(3){
+  margin-right: 0;
+}
+
+.header-cont ul li p{
+  font-family: 'Teko', sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  margin:0;
+}
+
+.header-cont ul li p span{
+  font-family: 'Libre Barcode 128', cursive;
+  font-size: 40px;
+}
+
+.header-cont img{
+  width: 60%;
+}
+
+.scroll-button{
+  z-index: 100;
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  width: 80px;
+  text-align: center;
+  display: none;
+}
+
+
+.scroll-button-icon img{
+  width: 100%;
+}
+
+.cont{
+  margin-top: 200px;
+}
+
+.heading{
+  text-align: center;
+  font-family: 'Teko', sans-serif;
+  font-size: 80px;
+}
+
+#works,.about-section{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.grid{
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 1);
+}
+
+.grid-item{
+  margin:0;
+  position: relative;
+}
+
+.grid-item-1{
+  width: 50%;
+}
+
+.grid-item-2{
+  width: 25%;
+}
+
+.grid-item-3{
+  width: 37.5%;
+}
+
+.grid-item img{
+  width: 100%;
+}
+
+
+.grid-item .caption{
+  display: none;
+  background-color: rgba(153,153,153,0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 2.5vw;
+  padding: 2.5%;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.grid-item .caption:before{
+  content: "";
+  display: inline-block;
+  height: 50%;
+}
+
+.about-cont{
+  background: rgba(255, 255, 255, 1);
+}
+
+.about-section{
+  display: flex;
+  vertical-align: bottom;
+}
+
+.about-left{
+  width: 35%;
+  margin-top: 10vh;
+}
+
+.about-right{
+  width: 50%;
+  margin-left: 15%;
+}
+
+.icon{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about-link img{
+  width: 30px;
+  margin-right: 15px;
+}
+
+.about-right{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.about-initial{
+  font-weight: bold;
+  font-size: 1.7vw;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.about-initial span{
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.about-link-list{
+  list-style: none;
+  margin-top: 60px;
+}
+
+.about-link-list li{
+  display: inline;
+}
+
+#contact{
+  margin-bottom: 130px;
+}
+
+#contact div{
+  text-align: center;
+}
+
+#contact div a{
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: rgba(0,0,0,1);
+  font-weight: bold;
+  font-size: 24px;
+  border: 3px solid rgba(0,0,0,1);
+  padding: 4px 8px;
+}
+
+footer{
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+  font-family: 'Teko', sans-serif;
+  color: rgba(0,0,0,1);
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 0;
+  padding: 8px 0;
+}
+
+footer p{
+  margin: 0;
+}
+
+/* 詳細 */
+.detail-body{
+  background: rgba(255, 255, 255, 1);
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-cont h1{
+  font-family: 'Teko','Noto Sans JP', sans-serif;;
+  text-align: center;
+  font-size: 65px;
+}
+
+.main-visual img{
+  width: 100%;
+  border: 1.5px solid rgba(0,0,0,1);
+}
+
+.detail-cont{
+  display: flex;
+  width: 68%;
+  margin: 0 auto;
+}
+
+.left-cont, .right-cont{
+  width: 50%;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.left-cont a,.home-button a{
+  text-decoration: none;
+  color: rgba(0,0,0,1);
+}
+
+.home-button a{
+  display: block;
+  text-align:center;
+  font-family: 'Teko', sans-serif;
+  font-size: 28px;
+  border: 1.5px solid rgba(0,0,0,1);
+}
+
+.left-cont ul {
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 2px;
+}
+
+.left-cont a,.left-cont p,.right-cont p{
+  padding-left: 20px;
+  margin-top: 2px;
+}
+
+.left-cont h4{
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.sp-list,.art-ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-list{
+  width: 22%;
+  margin-right: 4%;
+}
+
+.img-list:nth-child(4){
+  margin-right: 0;
+}
+
+.art-li{
+  width: 30%;
+  margin-right: 5%;
+}
+
+.art-li:nth-child(3n){
+  margin-right: 0;
+}
+
+.art-li p{
+  font-family: 'Noto Sans JP', sans-serif;
+  text-align: center;
+}
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  background: rgba(255, 255, 255, 1);
+}
+#loading {
+  text-align: center;
+  position: relative;
+  top: 25%;
+  z-index: 2;
+}
+
+#loading img{
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width:896px){
+  .scroll-button{
+    top: 80%;
+    width: 60px;
+  }
+  .grid{
+    width: 100%;
+  }
+
+  #works{
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .detail-cont{
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .left-cont, .right-cont{
+    width: 100%;
+  }
+
+  .main-cont h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:480px){
+  header{
+    padding:0;
+    padding-bottom: 15px;
+  }
+
+  .header-cont ul li p span,.header-cont ul li p{
+    font-size: 20px;
+  }
+
+  .header-cont img{
+    width: 70%;
+  }
+  .scroll-button{
+    top: 80%;
+    width: 45px;
+  }
+
+  .heading{
+    font-size: 45px;
+  }
+
+  .cont{
+    margin: 0;
+  }
+
+  .about-section{
+    width: 90%;
+    display: block;
+  }
+
+  .about-left{
+    width: 60%;
+    padding-top: 30px;
+    margin: auto;
+  }
+
+  .about-right{
+    width: 90%;
+    margin: auto;
+  }
+
+  .about-right p{
+    padding-left: 20px;
+  }
+
+  .about-initial {
+    font-size: 5vw;
+  }
+
+  .about-initial span {
+    font-size: 9vw;
+  }
+
+  .about-link-list{
+    text-align: center;
+  }
+
+  #contact div a{
+    font-size: 15px;
+  }
+
+  .img-list{
+    width: 48%;
+  }
+
+  .img-list:nth-child(2n){
+    margin-right: 0;
+  }
+
+  .main-cont h1 {
+    font-size: 25px;
+  }
+
+  .detail-cont{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  footer{
+    font-size: 18px;
+  }
+}
