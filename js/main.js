@@ -20,26 +20,29 @@ $(function(){
     }
     else{$('.scroll-button').css('display','none');}
   });
-  $(function() {
-    var h = $(window).height();
-    $('#top-body').css('display','none');
-    $('#loader-bg ,#loader').height(h).css('display','block');
-  });
-    
-  $(window).on('load',function () { //全ての読み込みが完了したら実行
-    $('#loader-bg').delay(900).fadeOut(800);
-    $('#loading').delay(900).fadeOut(300);
+});
+
+$(function() {
+  var h = $(window).height();
+  $('#top-body').css('display','none');
+  $('#loader-bg ,#loader').height(h).css('display','block');
+});
+  
+$(window).on('load',function () { //全ての読み込みが完了したら実行
+  $('#loader-bg').fadeOut(800);
+  $('#loading').fadeOut(300);
+  $('#top-body').css('display','block');
+});
+
+$(function(){
+  function stopload(){
+    $('#loader-bg').fadeOut(800);
+    $('#loading').fadeOut(300);
     $('#top-body').css('display','block');
-  });
+  }
     
   //10秒たったら強制的にロード画面を非表示
   $(function(){
     setTimeout('stopload()',10000);
   });
-    
-  function stopload(){
-    $('#top-body').css('display','block');
-    $('#loader-bg').delay(900).fadeOut(800);
-    $('#loading').delay(900).fadeOut(300);
-  }
 });
