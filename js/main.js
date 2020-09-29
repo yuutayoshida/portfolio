@@ -21,28 +21,3 @@ $(function(){
     else{$('.scroll-button').css('display','none');}
   });
 });
-
-$(function() {
-  $('#loader-bg').removeClass('is-hide');
-  $('#loading').removeClass('is-hide');
-  $('#top-body').addClass('is-hide');
-});
-  
-$(window).on('load',function () { //全ての読み込みが完了したら実行
-  $('#loader-bg').addClass('is-hide');
-  $('#loading').addClass('is-hide');
-  $('#top-body').removeClass('is-hide');
-});
-
-//10秒たったら強制的にロード画面を非表示
-$(function(){
-  setTimeout('stopload()',10000);
-});
-
-$(function(){
-  function stopload(){
-    $('#loader-bg').addClass('is-hide');
-    $('#loading').addClass('is-hide');
-    $('#top-body').removeClass('is-hide');
-  }
-});
