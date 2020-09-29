@@ -10,15 +10,16 @@ if (host !== "https://yuutayoshida.github.io/portfolio/top.html") {
   bg.classList.remove('is-hide');
   loader.classList.remove('is-hide');
 
+  /* ロード画面を非表示にする処理 */
+  function stopload(){
+    bg.classList.add('fadeout-bg');
+    loader.classList.add('fadeout-loader');
+  }
+
   /* 読み込み完了 */
   window.addEventListener('load', stopload);
 
   /* 10秒経ったら強制的にロード画面を非表示にする */
   setTimeout('stopload()',10000);
 
-  /* ロード画面を非表示にする処理 */
-  function stopload(){
-      bg.classList.add('fadeout-bg');
-      loader.classList.add('fadeout-loader');
-  }
 }
